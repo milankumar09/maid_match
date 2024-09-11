@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maid Service Price Calculator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    #total-price {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Maid Service Price Calculator</h1>
+    <form id="calculator-form">
+        <label for="area">Area (in square feet):</label>
+        <input type="number" id="area" name="area" value="1000" required>
+
+        <label for="house-cleaning">House Cleaning (INR per month):</label>
+        <input type="number" id="house-cleaning" name="house-cleaning" value="5000">
+
+        <label for="office-cleaning">Office Cleaning (INR per month):</label>
+        <input type="number" id="office-cleaning" name="office-cleaning" value="6000">
+
+        <label for="regular-cleaning">Regular Cleaning (INR per month):</label>
+        <input type="number" id="regular-cleaning" name="regular-cleaning" value="4000">
+
+        <label for="bathroom-cleaning">Bathroom Cleaning (INR per month):</label>
+        <input type="number" id="bathroom-cleaning" name="bathroom-cleaning" value="3000">
+
+        <label for="deep-cleaning">Deep Cleaning (INR per month):</label>
+        <input type="number" id="deep-cleaning" name="deep-cleaning" value="7000">
+
+        <label for="laundry">Laundry (INR per month):</label>
+        <input type="number" id="laundry" name="laundry" value="2000">
+
+        <label for="cooking">Cooking (INR per month):</label>
+        <input type="number" id="cooking" name="cooking" value="3000">
+
+        <label for="dishwashing">Dishwashing (INR per month):</label>
+        <input type="number" id="dishwashing" name="dishwashing" value="2500">
+
+        <button type="button" onclick="calculateTotal()">Calculate Total</button>
+    </form>
+    <div id="total-price"></div>
+</div>
+
+<script>
+    function calculateTotal() {
+        var area = parseFloat(document.getElementById('area').value);
+        var totalCost = 0;
+
+        if (document.getElementById('house-cleaning').value !== "") {
+            totalCost += parseFloat(document.getElementById('house-cleaning').value);
+        }
+        if (document.getElementById('office-cleaning').value !== "") {
+            totalCost += parseFloat(document.getElementById('office-cleaning').value);
+        }
+        if (document.getElementById('regular-cleaning').value !== "") {
+            totalCost += parseFloat(document.getElementById('regular-cleaning').value);
+        }
+        if (document.getElementById('bathroom-cleaning').value !== "") {
+            totalCost += parseFloat(document.getElementById('bathroom-cleaning').value);
+        }
+        if (document.getElementById('deep-cleaning').value !== "") {
+            totalCost += parseFloat(document.getElementById('deep-cleaning').value);
+        }
+        if (document.getElementById('laundry').value !== "") {
+            totalCost += parseFloat(document.getElementById('laundry').value);
+        }
+        if (document.getElementById('cooking').value !== "") {
+            totalCost += parseFloat(document.getElementById('cooking').value);
+        }
+        if (document.getElementById('dishwashing').value !== "") {
+            totalCost += parseFloat(document.getElementById('dishwashing').value);
+        }
+
+        var totalPrice = totalCost;
+
+        document.getElementById('total-price').textContent = 'Total Price: INR ' + totalPrice.toFixed(2);
+    }
+</script>
+
+</body>
+</html>

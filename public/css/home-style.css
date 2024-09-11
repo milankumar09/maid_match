@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.notification-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(253, 241, 241);
+}
+
+.nav {
+    font-weight: 900;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.list li {
+    padding: 10px 20px;
+}
+
+.list li a {
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    padding: 5px 15px;
+    margin-right: 60px;
+    background-color: rgb(206, 145, 145);
+    border: none;
+    border-radius: 3px;
+    margin-top: 18px;
+}
+
+.header {
+    
+    height: 250px;
+    padding: 130px;
+}
+
+.best {
+    font-size: 35px;
+}
+
+.choose {
+    padding: 30px 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-secttion {
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+}
+
+.image2 {
+    height: 100px;
+    width: 100px;
+}
+
+.professional {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 10px;
+    border-left: 5px solid;
+    border-image: linear-gradient(rgb(253, 223, 228), rgb(231, 111, 131));
+    border-image-slice: 1;
+    box-shadow: 3px 3px 3px rgb(224, 226, 226);
+    border-radius: 30px;
+    padding-bottom: 20px;
+}
+
+.paragraph {
+    padding-top: 20px;
+}
+
+.main {
+    margin-bottom: 100px;
+}
+
+.choosees {
+    display: flex;
+    box-shadow: 3px 3px 3px 3px rgb(224, 226, 226);
+    border-radius: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.relaiable {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.image3 {
+    height: 40px;
+    width: 40px;
+}
+
+.image4 {
+    margin: 30px;
+    margin-top: 60px;
+}
+
+.maiforyou-service {
+    margin-top: 20px;
+    margin-right: 140px;
+    text-align: justify;
+}
+
+.button2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    background-color: rgb(245, 91, 116);
+    border: none;
+    border-radius: 3px;
+}
+
+.expert {
+    padding-right: 30px;
+}
+
+.p {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.professionals {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    padding-bottom: 20px;
+}
+
+.image5 {
+    height: 200px;
+    width: 250px;
+}
+
+.image6 {
+    height: 100px;
+    width: 100px;
+}
+
+.provde-service {
+    padding: 20px;
+    margin: 40px;
+}
+
+.section4 {
+    margin: 100px;
+    box-shadow: 10px 10px 5px 12px rgb(224, 226, 226);
+    border-radius: 10px;
+}
+
+.image7 {
+    height: 70px;
+    width: 110px;
+}
+
+.quality {
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.review {
+    padding-left: 60px;
+}
+
+.customer-review {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 200;
+}
+
+.term {
+    background-color: rgb(4, 4, 24);
+    display: flex;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.term-all {
+    width: 30%;
+    padding: 40px;
+    padding-right: 10px;
+    margin-left: 20px;
+}
+
+.terms {
+    margin: 40px;
+    margin-right: 150px;
+}
+
+.footer {
+    background-color: rgb(4, 4, 24);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
