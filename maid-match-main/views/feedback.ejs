@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback - MaidMatch</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"], textarea, select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    textarea {
+        resize: vertical;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Feedback Form</h1>
+    
+    <form id="feedback-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="maid">Select Maid:</label>
+        <select id="maid" name="maid" required>
+            <option value="" disabled selected>Select Maid</option>
+            <option value="Anita">Anita</option>
+            <option value="Geeta">Geeta</option>
+            <option value="Lakshmi">Lakshmi</option>
+            <option value="Sita">Sita</option>
+            <option value="Radha">Radha</option>
+            <option value="Kavita">Kavita</option>
+            <option value="Meera">Meera</option>
+            <option value="Asha">Asha</option>
+            <option value="Rani">Rani</option>
+            <option value="Saraswati">Saraswati</option>
+            <option value="Jaya">Jaya</option>
+            <option value="Uma">Uma</option>
+            <option value="Anjali">Anjali</option>
+            <option value="Gita">Gita</option>
+            <option value="Vijaya">Vijaya</option>
+            <option value="Neeta">Neeta</option>
+            <option value="Savita">Savita</option>
+            <option value="Pooja">Pooja</option>
+            <option value="Mala">Mala</option>
+            <option value="Rita">Rita</option>
+        </select>
+
+        <label for="rating">Rating (out of 5):</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+
+<script>
+    // Function to generate a random selection of Indian maid names
+    function getRandomMaidNames() {
+        var maidNames = ["Anita", "Geeta", "Lakshmi", "Sita", "Radha", "Kavita", "Meera", "Asha", "Rani", "Saraswati", "Jaya", "Uma", "Anjali", "Gita", "Vijaya", "Neeta", "Savita", "Pooja", "Mala", "Rita"];
+        var randomMaidNames = [];
+        for (var i = 0; i < 20; i++) {
+            var randomIndex = Math.floor(Math.random() * maidNames.length);
+            randomMaidNames.push(maidNames[randomIndex]);
+        }
+        return randomMaidNames;
+    }
+
+    // Populate the dropdown menu with random maid names on page load
+    window.onload = function() {
+        var maidDropdown = document.getElementById("maid");
+        var randomMaidNames = getRandomMaidNames();
+        for (var i = 0; i < randomMaidNames.length; i++) {
+            var option = document.createElement("option");
+            option.text = randomMaidNames[i];
+            option.value = randomMaidNames[i];
+            maidDropdown.add(option);
+        }
+    };
+</script>
+
+</body>
+</html>

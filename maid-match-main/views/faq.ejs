@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ - Maid Service</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f6f6f6;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+        text-align: center;
+        color: #333;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    .question {
+        font-weight: bold;
+        margin-top: 20px;
+        cursor: pointer;
+        color: #007bff;
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+    }
+    .question:hover {
+        color: #ff6b6b;
+    }
+    .answer {
+        margin-bottom: 20px;
+        padding-left: 20px;
+        display: none;
+    }
+    .answer p {
+        margin: 0;
+        color: #666;
+        font-size: 16px;
+    }
+    .bg-primary {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>FAQ - Maid Service</h1>
+    
+    <h2>General Questions</h2>
+    <div class="question" onclick="toggleAnswer('q1')">What services do you offer?</div>
+    <div id="q1" class="answer">
+        <p>We offer a range of cleaning services including house cleaning, office cleaning, regular cleaning, deep cleaning, bathroom cleaning, laundry, cooking, and dishwashing.</p>
+    </div>
+
+    <div class="question" onclick="toggleAnswer('q2')">What are your service hours?</div>
+    <div id="q2" class="answer">
+        <p>Our service hours are from 8:00 AM to 6:00 PM, Monday to Saturday. However, special arrangements can be made for evenings and Sundays upon request.</p>
+    </div>
+
+    <div class="question" onclick="toggleAnswer('q3')">How do I book your services?</div>
+    <div id="q3" class="answer">
+        <p>You can book our services by contacting us via phone or email. Alternatively, you can fill out the booking form on our website.</p>
+    </div>
+
+    <h2>Pricing Questions</h2>
+    <div class="question" onclick="toggleAnswer('q4')">How is the pricing determined?</div>
+    <div id="q4" class="answer">
+        <p>Our pricing is determined based on factors such as the size of the area to be cleaned and the specific services requested. Please refer to our pricing calculator for more details.</p>
+    </div>
+
+    <div class="question" onclick="toggleAnswer('q5')">Are there any additional charges?</div>
+    <div id="q5" class="answer">
+        <p>Additional charges may apply for services requested outside of our standard service hours or for special cleaning products or equipment required for certain tasks.</p>
+    </div>
+
+    <div class="question" onclick="toggleAnswer('q6')">Do you offer discounts for regular clients?</div>
+    <div id="q6" class="answer">
+        <p>Yes, we offer discounts for clients who book our services on a regular basis. Please contact us for more information on our discount programs.</p>
+    </div>
+
+    <h2>Booking and Cancellation</h2>
+    <div class="question" onclick="toggleAnswer('q7')">How far in advance should I book?</div>
+    <div id="q7" class="answer">
+        <p>We recommend booking our services at least 48 hours in advance to ensure availability. However, we understand that last-minute bookings may be necessary, so feel free to contact us for availability.</p>
+    </div>
+
+    <div class="question" onclick="toggleAnswer('q8')">What is your cancellation policy?</div>
+    <div id="q8" class="answer">
+        <p>We require at least 24 hours' notice for cancellations to avoid a cancellation fee. Cancellations made less than 24 hours before the scheduled service may be subject to a fee.</p>
+    </div>
+
+    <div class="question" onclick="toggleAnswer('q9')">Can I reschedule my booking?</div>
+    <div id="q9" class="answer">
+        <p>Yes, you can reschedule your booking free of charge with at least 24 hours' notice. Please contact us to arrange a new appointment time.</p>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</div>
+
+</body>
+</html>
